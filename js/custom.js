@@ -191,13 +191,22 @@ $(document).ready(function() {
 	});
 
 	//Event Page sliders
+
+	//Set Overlays
+	$(".gowanus-overlay img").css("opacity", 0.4);
+	$(".gowanus-overlay li").hover(function() {
+		$(this).find('img').stop().fadeTo('slow', 1);
+	}, function() {
+		$(this).find('img').stop().fadeTo('slow', 0.4);
+	});
+
 	var sliderSettings = {
 		randomStart: true,
 		auto: true,
 		mode: 'fade',
 		pager: false,
 		slideWidth: 1000
-	}
+	};
 
 	//Grove Alley Painter's Night
 	$("#grove_alley_paint_night-bx").bxSlider(sliderSettings);
