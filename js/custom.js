@@ -190,4 +190,16 @@ $(document).ready(function() {
 		}
 	});
 
+	//Event Page sliders
+	var sliderSettings = {
+		randomStart: true,
+		auto: true,
+		mode: 'fade',
+		pager: false,
+		slideWidth: 1000
+	}
+
+	//Grove Alley Painter's Night
+	$("#grove_alley_paint_night-bx").bxSlider(sliderSettings);
+
 });
