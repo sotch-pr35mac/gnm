@@ -1,21 +1,6 @@
-/******************************************************************
-*******************************************************************
+$(document).ready(function() {
 
-Template Name: Treviso
-Theme URI: http://themeforest.ninetofive.me/treviso/
-Description: Responsive HTML5 Template
-Author: ninetofive
-Author URI: http://www.ninetofive.me
-Version: 1.0
-							
-Designed & Handcrafted by Zan from ninetofive.me
-									
-*******************************************************************
-******************************************************************/
-
-$(document).ready(function() { 
-
-	//Animated scrolling		   
+	//Animated scrolling
 	$('ul.mainmenu a').click(function() {
 		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 			var $target = $(this.hash);
@@ -60,7 +45,7 @@ $(document).ready(function() {
 					marginTop:'-80px'
 				}, 300);
 			}
-			
+
 		}
 	});
 
@@ -161,6 +146,48 @@ $(document).ready(function() {
 		$('#snippets').fadeIn();
 	});
 
+	//Contact Form
 
+	$("#contactCancel").click(function() {
+		$("#contactName").val("");
+		$("#contactEmail").val("");
+		$("#contactSubject").val("");
+		$("#contactMessage").val("");
+	});
+
+	$("#contactSubmit").click(function() {
+		var name = $("#contactName").val();
+		var email = $("#contactEmail").val();
+		var subject = $("#contactSubject").val();
+		var message = $("#contactMessage").val();
+
+		if(name == "" || name == " " || email == "" || email == " " || message == "" || message == " ") {
+			swal("Incomplete Form", "You must complete all required fields.", "error");
+		}
+		else {
+			if(subject == "" || subject == " ") {
+				subject = "Message from: "+name;
+			}
+
+			$.ajax({
+				type: 'POST',
+				url: 'php/sendMessage.php',
+				data: {
+					name: name,
+					email: email,
+					subject: subject,
+					message: message
+				},
+				success: function(data) {
+					console.log(data);
+					swal("Message Sent", "Your message was sent successfully.", "success");
+				},
+				error: function(data) {
+					console.log(data);
+					swal("Message Not Sent", "Your message failed to send.", "error");
+				}
+			});
+		}
+	});
 
 });
