@@ -193,11 +193,11 @@ $(document).ready(function() {
 	//Event Page sliders
 
 	//Set Overlays
-	$(".gowanus-overlay img").css("background-color", 0.9);
+	$(".gowanus-overlay img").css("background-color", 1);
 	$(".gowanus-overlay li").hover(function() {
-		$(this).find('img').stop().fadeTo('slow', 1);
+		$(this).find('img').stop().fadeTo('slow', .9);
 	}, function() {
-		$(this).find('img').stop().fadeTo('slow', 0.9);
+		$(this).find('img').stop().fadeTo('slow', 1);
 	});
 
 	var sliderSettings = {
