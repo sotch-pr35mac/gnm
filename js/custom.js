@@ -209,4 +209,10 @@ $(document).ready(function() {
 	//Grove Alley Painter's Night
 	$("#grove_alley_paint_night-bx").bxSlider(sliderSettings);
 
+	//Pop2 Brooklyn
+	$("#pop2_brooklyn").contenthover({
+    overlay_background:'#000',
+    overlay_opacity:0.8
+	});
+
 });
