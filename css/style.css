@@ -972,8 +972,8 @@ textarea {
 }
 
 .poster {
-  height: 60%;
-  width: 60%;
+  height: 300px;
+  width: auto;
 }
 
 .contenthover { padding:20px 20px 10px 20px; }
