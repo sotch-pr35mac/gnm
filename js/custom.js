@@ -17,7 +17,7 @@ $(document).ready(function() {
 
 	// Scroll Down Link
 	$('.scrolldown').click(function() {
-		var targetOffset = $('#about').offset().top-80;
+		var targetOffset = $('#scrollhere').offset().top-80;
 		$('html,body').animate({scrollTop: targetOffset}, 1000);
 	});
 
@@ -206,7 +206,15 @@ $(document).ready(function() {
 		slideWidth: 1000
 	};
 
-	//Grove Alley Painter's Night
+	//Sliders
+	$("#poster-slider").bxSlider({
+		slideWidth: 600,
+    minSlides: 1,
+    maxSlides: 1,
+    moveSlides: 1,
+    slideMargin: 10,
+		adaptiveHeight: true
+	});
 	$("#grove_alley_paint_night-bx").bxSlider(sliderSettings);
 
 	//Pop2 Brooklyn

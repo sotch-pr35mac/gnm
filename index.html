@@ -36,8 +36,8 @@
 	<div class="menubar" data-scroll="true">
 		<a href="#" class="logo"></a>
 		<ul class="mainmenu">
-			<li><a href="#about">About</a></li>
 			<li><a href="#events">Events</a></li>
+			<li><a href="#about">About</a></li>
 			<li><a href="#contact">Contact</a></li>
 		</ul>
 	</div>
@@ -56,16 +56,7 @@
 			<div data-icon="&#xe017;" class="icon"></div>
 		</a>
 	</div>
-
-	<!-- Start About -->
-	<div class="section divider">
-		<h2>About Us</h2>
-		<a class="scroll" id="about"></a>
-	</div>
-	<div class="content">
-		<p class="main dark-grey">Our vision for creating amazing events in unique spaces started off in industrial Gowanus, Brooklyn. After a number of successful night markets’ in a few (very cool) Gowanus venues, we’ve kept it going and expanded into other Brooklyn neighborhoods. In addition to vendor markets, we’ve also produced a variety of other unique events…Stay tuned and hope to see yall soon!</p>
-	</div>
-	<!-- End About -->
+	<div id="scrollhere"></div>
 
 	<!-- Start Events -->
 	<div class="section divider">
@@ -73,17 +64,35 @@
 		<a class="scroll" id="events"></a>
 	</div>
 	<div class="content">
-		<!-- Start Pop2 Brooklyn -->
-		<center>
-		<h3>Pop<sup>2</sup> Brooklyn</h3>
-		<img id="pop2_brooklyn" src="images/pop2_brooklyn/poster.jpg" class="poster">
-		<div class="contenthover">
-			<h1>Pop<sup>2</sup> Brooklyn</h1>
-			<p>200 Livingston Street Brooklyn <br> Dec 12 - 13</p>
-			<p><a class="mybutton" href="events/pop2_brooklyn.html">View Event Details</a></p>
+		<!-- Start Poster Carosel -->
+		<div id="poster-slider">
+			<div class="slide">
+				<img id="pop2_brooklyn" src="images/posters/pop2brooklyn.jpg" class="poster">
+				<div class="contenthover">
+					<center>
+					<h1>Pop<sup>2</sup> Brooklyn</h1>
+					<p>200 Livingston Street Brooklyn <br> Dec 12 - 13</p>
+					<p><a class="mybutton" href="events/pop2_brooklyn.html">View Event Details</a></p>
+					</center>
+				</div>
+			</div>
+			<div class="slide">
+				<img class="poster" src="images/posters/filmbiz.jpg">
+			</div>
+			<div class="slide">
+				<img class="poster" src="images/posters/gnm.jpg">
+			</div>
+			<div class="slide">
+				<img class="poster" src="images/posters/grove-alley-blue.jpg">
+			</div>
+			<div class="slide">
+				<img class="poster" src="images/posters/grove-alley-green.jpg">
+			</div>
+			<div class="slide">
+				<img class="poster" src="images/posters/1hip.jpg">
+			</div>
 		</div>
-		</center>
-		<!-- End Pop2 Brooklyn -->
+		<!-- End Poster Carosel -->
 		<!-- Start Event Grove Alley Paint Night -->
 		<h3>Grove Alley Paint Night</h3>
 		<ul id="grove_alley_paint_night-bx" class="gowanus-overlay">
@@ -100,6 +109,16 @@
 		<!-- End Event Grove Alley Paint Night -->
 	</div>
 	<!-- End Events -->
+
+	<!-- Start About -->
+	<div class="section divider">
+		<h2>About Us</h2>
+		<a class="scroll" id="about"></a>
+	</div>
+	<div class="content">
+		<p class="main dark-grey">Our vision for creating amazing events in unique spaces started off in industrial Gowanus, Brooklyn. After a number of successful night markets’ in a few (very cool) Gowanus venues, we’ve kept it going and expanded into other Brooklyn neighborhoods. In addition to vendor markets, we’ve also produced a variety of other unique events…Stay tuned and hope to see yall soon!</p>
+	</div>
+	<!-- End About -->
 
 	<!-- Start Contact -->
 	<div class="section divider">
