@@ -17,7 +17,7 @@ $(document).ready(function() {
 
 	// Scroll Down Link
 	$('.scrolldown').click(function() {
-		var targetOffset = $('div.blockquote').offset().top-80;
+		var targetOffset = $('#about').offset().top-80;
 		$('html,body').animate({scrollTop: targetOffset}, 1000);
 	});
 
