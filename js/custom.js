@@ -203,7 +203,8 @@ $(document).ready(function() {
 		auto: true,
 		mode: 'fade',
 		pager: false,
-		slideWidth: 1000
+		slideWidth: 1000,
+		adaptiveHeight: false
 	};
 
 	//Sliders
@@ -213,11 +214,15 @@ $(document).ready(function() {
     maxSlides: 1,
     moveSlides: 1,
     slideMargin: 10,
-		adaptiveHeight: true
+		adaptiveHeight: true,
+		randomStart: false,
+		auto: true
 	});
-	$("#grove_alley_paint_night-bx").bxSlider(sliderSettings);
 
-	//Pop2 Brooklyn
+	$("#3-16-13-bx").bxSlider(sliderSettings);
+	$("#1-12-13-bx").bxSlider(sliderSettings);
+
+	//Pop2 Brooklyn Content Hover
 	$("#pop2_brooklyn").contenthover({
     overlay_width:270,
 		overlay_height:300,

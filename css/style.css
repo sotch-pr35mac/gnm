@@ -356,14 +356,14 @@ a.scrolldown {
     height: 80px;
     width: 100%;
     z-index: 9999;
-    background-color: #FFF;
+    background-color: black;
     margin-top: -80px;
     -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
     -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 }
 .menubar.alt {
-    background-color: #f6f6f6;
+    background-color: black;
 }
 a.logo {
     display: inline-block;
@@ -974,6 +974,11 @@ textarea {
 .poster {
   height: auto;
   width: 600px;
+}
+
+.event-image img {
+  width: 1000px;
+  height: auto;
 }
 
 .contenthover { padding:20px 20px 10px 20px; }
