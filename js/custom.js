@@ -204,7 +204,7 @@ $(document).ready(function() {
 		mode: 'fade',
 		pager: false,
 		slideWidth: 1000,
-		adaptiveHeight: false
+		adaptiveHeight: true
 	};
 
 	//Sliders
@@ -214,9 +214,7 @@ $(document).ready(function() {
     maxSlides: 1,
     moveSlides: 1,
     slideMargin: 10,
-		adaptiveHeight: true,
-		randomStart: false,
-		auto: true
+		adaptiveHeight: true
 	});
 
 	$("#3-16-13-bx").bxSlider(sliderSettings);

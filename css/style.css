@@ -55,6 +55,7 @@ html, body {
     height: 100%;
     letter-spacing: 0.025em;
     -webkit-font-smoothing: subpixel-antialiased;
+    background-color: #464646;
 }
 /******************************************************************
 	Text Selection Styles
@@ -62,15 +63,15 @@ html, body {
 
 : : selection {
     background: #BE99C5;
-    color: #fff;
+    color: #464646;
 }
 : : -moz-selection {
     background: #BE99C5;
-    color: #fff;
+    color: #464646;
 }
 : : -webkit-selection {
     background: #BE99C5;
-    color: #fff;
+    color: #464646;
 }
 a {
     outline: none;
@@ -159,7 +160,7 @@ h6 {
 ******************************************************************/
 
 .white {
-    color: #FFF;
+    color: #464646;
 }
 .color {
     color: #BE99C5;
@@ -223,7 +224,7 @@ div.pagetitle {
 }
 div.pagetitle h1 {
     line-height: 120px;
-    color: #FFF;
+    color: #464646;
     text-align: center;
 }
 p.main {
@@ -247,7 +248,7 @@ div.section.divider.single {
 div.section.divider h2 {
     font-weight: 400;
     color: #BE99C5;
-    background-color: #FFF;
+    background-color: #464646;
     margin-top: -20px;
     width: 300px;
     margin-left: auto;
@@ -261,7 +262,7 @@ a.scroll {
 }
 div.icon {
     font-size: 80px;
-    color: #FFF;
+    color: #464646;
 }
 .front div.icon {
     line-height: 210px;
@@ -295,7 +296,7 @@ div.icon {
 }
 .herowrapper h1 {
     text-align: center;
-    color: #FFF;
+    color: #464646;
     font-size: 40px;
     font-weight: 300;
 }
@@ -319,7 +320,7 @@ a.scrolldown {
     text-align: center;
     font-size: 12px;
     text-transform: uppercase;
-    color: #FFF;
+    color: #fff;
     font-weight: 300;
 }
 /******************************************************************
@@ -448,12 +449,12 @@ footer.main div.twitter {
     background-color: #343434;
 }
 footer.main h5.twitter {
-    color: #FFF;
+    color: #464646;
     line-height: 90px;
     background-color: #343434;
 }
 footer.main h6.copyright {
-    color: #FFF;
+    color: #464646;
     line-height: 50px;
     background-color: #272727;
 }
@@ -524,15 +525,15 @@ div.section.block .hover.content h2 {
     padding-top: 40px;
     font-size: 40px;
     font-weight: 400;
-    color: #FFF;
+    color: #464646;
 }
 div.section.block .hover.content h5 {
     font-weight: 400;
-    color: #FFF;
+    color: #464646;
 }
 div.section.block .hover.content h6 {
     font-weight: 400;
-    color: #FFF;
+    color: #464646;
 }
 div.section.full li: last-child {
     margin-right: 0px;
@@ -567,7 +568,7 @@ a.readmore {
     margin-top: 5px;
 }
 div.section.block.blog .hover a.readmore {
-    color: #FFF;
+    color: #464646;
 }
 /******************************************************************
 	About Us
@@ -604,7 +605,7 @@ div.quotehover {
     background-color: rgba(96, 147, 231, 0.6);
 }
 div.quotehover h5, div.quotehover h6 {
-    color: #FFF;
+    color: #464646;
     text-align: center;
     padding: 0px 20px;
 }
@@ -733,7 +734,7 @@ li.filter:hover {
 li.filter.active {
     font-weight: 700;
     background-color: #BE99C5;
-    color: #FFF;
+    color: #464646;
 }
 ul.portfolio li {
     width: 25%;
@@ -771,7 +772,7 @@ ul.portfolio li {
     text-align: center;
 }
 .portfoliohover h1 {
-    color: #FFF;
+    color: #464646;
     font-size: 150px;
     font-weight: 300;
     -webkit-transition: opacity, color 600ms ease;
@@ -794,7 +795,7 @@ ul.portfolio li:hover .portfoliohover {
 }
 ul.portfolio li:hover .portfoliohover h5, ul.portfolio li:hover .portfoliohover h6, ul.portfolio li:hover .portfoliohover h1 {
     opacity: 1;
-    color: #FFF;
+    color: #464646;
 }
 /******************************************************************
 	Blog
@@ -844,13 +845,13 @@ article.post .hover:hover div.postinfo {
     background-color: #BE99C5;
 }
 article.post .hover:hover div.postinfo h6, article.post .hover:hover div.postinfo b {
-    color: #FFF;
+    color: #464646;
 }
 div.posthover a {
     display: block;
     font-size: 24px;
     text-align: center;
-    color: #FFF;
+    color: #464646;
     line-height: 170px;
 }
 div.postinfo {
@@ -942,7 +943,7 @@ textarea {
 }
 .footer h6 {
     line-height: 50px;
-    color: #FFF;
+    color: #464646;
 }
 /******************************************************************
 	Mobile
@@ -982,8 +983,8 @@ textarea {
 }
 
 .contenthover { padding:20px 20px 10px 20px; }
-.contenthover, .contenthover h3, .contenthover a, .contenthover h1 { color:#fff; }
+.contenthover, .contenthover h3, .contenthover a, .contenthover h1 { color:#464646; }
 .contenthover h3, .contenthover p { margin:0 0 10px 0; line-height:1.4em; padding:0; }
 .contenthover p { font-size: 14pt; }
-.contenthover a.mybutton { display:block; padding:5px 10px; background:#3c9632; color:#fff; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; font-size: 14px; }
+.contenthover a.mybutton { display:block; padding:5px 10px; background:#3c9632; color:#464646; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; font-size: 14px; }
 .contenthover a.mybutton:hover { background:#34742d }
