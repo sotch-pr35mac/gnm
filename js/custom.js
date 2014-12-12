@@ -229,13 +229,23 @@ $(window).load(function() {
 		adaptiveHeight: true
 	});
 
-	var bx31613 = $("#3-16-13-bx").bxSlider(sliderSettings);
-	var bx11213 = $("#1-12-13-bx").bxSlider(sliderSettings);
+	var bx14927 = $("#14-9-27-bx").bxSlider(sliderSettings);
+	var bx14615 = $("#14-6-15-bx").bxSlider(sliderSettings);
+	var bx13823 = $("#13-8-23-bx").bxSlider(sliderSettings);
+	var bx13628 = $("#13-6-28-bx").bxSlider(sliderSettings);
+	var bx13316 = $("#13-3-16-bx").bxSlider(sliderSettings);
+	var bx13112 = $("#13-1-12-bx").bxSlider(sliderSettings);
+	var bx12128 = $("#12-12-8-bx").bxSlider(sliderSettings);
 
 	function reloadEventSliders() {
 		posterSlider.reloadSlider();
-		bx31613.reloadSlider();
-		bx11213.reloadSlider();
+		bx14927.reloadSlider();
+		bx14615.reloadSlider();
+		bx13823.reloadSlider();
+		bx13628.reloadSlider();
+		bx13316.reloadSlider();
+		bx13112.reloadSlider();
+		bx12128.reloadSlider();
 		console.log("reloaded");
 	}
 
