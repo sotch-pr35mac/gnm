@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(window).load(function() {
 
 	//Animated scrolling
 	$('ul.mainmenu a').click(function() {
@@ -207,19 +207,6 @@ $(document).ready(function() {
 		adaptiveHeight: true
 	};
 
-	//Sliders
-	$("#poster-slider").bxSlider({
-		slideWidth: 600,
-    minSlides: 1,
-    maxSlides: 1,
-    moveSlides: 1,
-    slideMargin: 10,
-		adaptiveHeight: true
-	});
-
-	$("#3-16-13-bx").bxSlider(sliderSettings);
-	$("#1-12-13-bx").bxSlider(sliderSettings);
-
 	//Pop2 Brooklyn Content Hover
 	$("#pop2_brooklyn").contenthover({
     overlay_width:270,
@@ -231,5 +218,27 @@ $(document).ready(function() {
 		overlay_background:'#000',
 		overlay_opacity:0.8
 	});
+
+	//Sliders
+	var posterSlider = $("#poster-slider").bxSlider({
+		slideWidth: 600,
+		minSlides: 1,
+		maxSlides: 1,
+		moveSlides: 1,
+		slideMargin: 10,
+		adaptiveHeight: true
+	});
+
+	var bx31613 = $("#3-16-13-bx").bxSlider(sliderSettings);
+	var bx11213 = $("#1-12-13-bx").bxSlider(sliderSettings);
+
+	function reloadEventSliders() {
+		posterSlider.reloadSlider();
+		bx31613.reloadSlider();
+		bx11213.reloadSlider();
+		console.log("reloaded");
+	}
+
+	setTimeout(reloadEventSliders, 1000);
 
 });
